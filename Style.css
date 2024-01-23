@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Images/IN-en-20240108-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    height: 85vh;
+    position: relative;
+    background-size: max(2000px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    /* max-width: 100vh; */
+    justify-content: space-around;
+    align-items: center;
+    height: 62px;
+
+}
+
+nav img {
+    position: relative;
+    width: 114px;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 11px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sepration {
+    height: 7px;
+    background-color: gray;
+}
+
+.btn {
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    padding: 3px 8px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 9px 101px 8px 14px;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.7);
+    color: white;
+}
+
+.hero buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 401px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 72px;
+    right: 0px;
+    width: 336px;
+        /* overflow: hidden; */
+}
+
+.third .secImg video {
+    width: 260px;
+    top: 51px;
+    right: 80px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+ 
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.faq h1 {
+    text-align: center;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    background-color: rgb(40, 39, 39);
+    padding: 15px;
+    max-width: 60vw;
+    margin: 10px auto;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    color: white;
+    background-color: gray;
+}
+
+footer {
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+    padding: 34px;
+}
+
+footer .questions {
+    padding: 30px 0px;
+}
+
+footer a {
+    font-size: 14px;
+    color: white;
+
+}
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    max-width: 60vw;
+    color: white;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .main {
+        height: 60vh;
+    }
+
+}
+
+.footer-items {
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+}
